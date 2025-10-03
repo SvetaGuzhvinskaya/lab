@@ -56,8 +56,12 @@
             z-index: 1;
         }
     }
+    &__title {
+        @include clamp(2);
+    }
     &__description {
         margin-top: auto;
+        @include clamp(3);
     }
     &:hover {
         .post-img__pic {
@@ -72,13 +76,14 @@
 }
 .list-link {
     display: flex;
+    flex-wrap: wrap;
     gap: 14px;
     &__item {
         display: flex;
         align-items: center;
         gap: 14px;
-        &:not(:first-child) {
-            &:before {
+        &:not(:last-child) {
+            &:after {
                 display: block;
                 width: 5px;
                 height: 5px;
@@ -133,6 +138,12 @@
     .advantages-post {
         padding-left: 10px;
         padding-right: 10px;
+        font-size: 12px;
+        line-height: 20px;
+        &__title {
+            font-size: 12px;
+            line-height: 20px;
+        }
     }
 }
 @media (max-width: $xs) {
@@ -141,6 +152,12 @@
     }
     .services-slider {
         margin-top: 2px;
+    }
+    .post-img {
+        &__description {
+            margin-bottom: 10px;
+            @include clamp(4);
+        }
     }
     .post-img {
         padding: 28px 32px 32px;
@@ -165,17 +182,11 @@
     }
     .advantages-post {
         padding: 16px 12px;
-        font-size: 12px;
-        line-height: 20px;
         text-align: left;
         .icon {
             min-width: 72px;
             width: 72px;
             height: 72px;
-        }
-        &__title {
-            font-size: 12px;
-            line-height: 20px;
         }
     }
 }

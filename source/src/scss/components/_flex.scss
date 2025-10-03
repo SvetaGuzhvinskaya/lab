@@ -30,9 +30,11 @@
         &--xs-row {
             flex-direction: row;
         }
-        &--gap24,
         &--gap14 {
             gap: 20px;
+        }
+        &--gap24 {
+            gap: 10px;
         }
         &--gap20 {
             gap: 12px;

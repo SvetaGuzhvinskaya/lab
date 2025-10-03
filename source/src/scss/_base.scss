@@ -2,6 +2,23 @@
 *:not(svg):after,
 *:not(svg):before {
   box-sizing: border-box;
+  outline: none;
+  outline-width: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: geometricPrecision;
+  &:focus,
+  &:hover,
+  &:active {
+    outline: none;
+    outline-width: 0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
 }
 body {
   width: 100%;
@@ -22,30 +39,8 @@ a {
     color: $color-red;
   }
 }
-html, 
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-button,
-input,
-textarea,
-dl,
-dt,
-dd,
-figure,
-figcaption {
-  margin: 0;
-  padding: 0;
-}
 ul,
 ol {
-  margin: 0;
-  padding: 0;
   list-style: none;
 }
 img {
@@ -75,13 +70,16 @@ small {
 .title {
   font-size: 30px;
   font-weight: 800;
+  line-height: 32px;
   &--md {
     font-size: 24px;
     font-weight: 600;
+    line-height: 28px;
   }
   &--xs {
     font-size: 11px;
     font-weight: 700;
+    line-height: 13px;
     text-transform: uppercase;
     opacity: .3;
   }
@@ -114,11 +112,14 @@ small {
   }
   .title {
     font-size: 20px;
+    line-height: 24px;
     &--md {
       font-size: 15px;
+      line-height: 20px;
     }
     &--xs {
       font-size: 10px;
+      line-height: 12px;
     }
   }
   .btn {
