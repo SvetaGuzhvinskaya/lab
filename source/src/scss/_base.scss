@@ -17,6 +17,7 @@ body {
 a {
   color: $color-green;
   text-decoration: none;
+  @include transition;
   &:hover {
     color: $color-red;
   }
@@ -40,12 +41,6 @@ figure,
 figcaption {
   margin: 0;
   padding: 0;
-}
-a {
-  &:before,
-  &:after {
-    @include transition;
-  }
 }
 ul,
 ol {
