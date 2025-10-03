@@ -1,5 +1,5 @@
 {
-  "name": "homut",
+  "name": "lab",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -7,7 +7,7 @@
     "dev": "gulp",
     "prod": "gulp --prod"
   },
-  "author": "BlackSam",
+  "author": "Sveta Guzhvinskaya",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.24.7",
