@@ -1,0 +1,41 @@
+.flex {
+    display: flex;
+    flex-direction: column;
+    &--row {
+       flex-direction: row; 
+       flex-wrap: nowrap;
+    }
+    &--gap8 {
+        gap: 8px;
+    }
+    &--gap14 {
+        gap: 14px;
+    }
+    &--gap20 {
+        gap: 20px;
+    }
+    &--gap24 {
+        gap: 24px;
+    }
+    &--x-center {
+        align-items: center;
+    }
+}
+
+@media (max-width: $xs) {
+    .flex {
+        &--xs-col {
+            flex-direction: column;
+        }
+        &--xs-row {
+            flex-direction: row;
+        }
+        &--gap24,
+        &--gap14 {
+            gap: 20px;
+        }
+        &--gap20 {
+            gap: 12px;
+        }
+    }
+}
