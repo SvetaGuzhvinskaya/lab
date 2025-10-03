@@ -8,9 +8,6 @@
     &--gap8 {
         gap: 8px;
     }
-    &--gap14 {
-        gap: 14px;
-    }
     &--gap20 {
         gap: 20px;
     }
@@ -30,13 +27,13 @@
         &--xs-row {
             flex-direction: row;
         }
-        &--gap14 {
-            gap: 20px;
+        &--xs-gap23 {
+            gap: 23px;
         }
-        &--gap24 {
+        &--xs-gap10 {
             gap: 10px;
         }
-        &--gap20 {
+        &--xs-gap12 {
             gap: 12px;
         }
     }

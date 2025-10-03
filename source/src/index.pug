@@ -12,7 +12,7 @@ block content
         .swiper.swiper--full.services-slider.js-services-slider
           ul.swiper-wrapper
             li.swiper-slide
-              .post-img.flex.flex--gap24   
+              .post-img.flex.flex--gap24.flex--xs-gap10  
                 picture.post-img__pic 
                   source(srcset="images/uploads/img01@2x.jpg 2x")
                   img.post-img__pic-img(src="images/uploads/img01.jpg" alt="Анализы дома")
@@ -25,7 +25,7 @@ block content
                   | Удобно и быстро.
                 span.btn Бесплатно
             li.swiper-slide 
-              .post-img.flex.flex--gap24   
+              .post-img.flex.flex--gap24.flex--xs-gap10   
                 picture.post-img__pic 
                   source(srcset="images/uploads/img02@2x.jpg 2x")
                   img.post-img__pic-img(src="images/uploads/img02.jpg" alt="МРТ")
@@ -34,7 +34,7 @@ block content
                 p.post-img__description Запись на магнитно-резонансную томографию. 8 видов скрининга.
                 span.btn От 1 690 Р
             li.swiper-slide 
-              .post-img.flex.flex--gap24  
+              .post-img.flex.flex--gap24.flex--xs-gap10  
                 picture.post-img__pic 
                   source(srcset="images/uploads/img03@2x.jpg 2x")
                   img.post-img__pic-img(src="images/uploads/img03.jpg" alt="Срочные анализы CITO")
@@ -45,7 +45,7 @@ block content
                   | Более 30 видов анализов.
                 span.btn Результаты в 14:00
     section.section.add-services
-      .container.flex.flex--gap14
+      .container.flex.flex--gap20.flex--xs-gap23
         h2.title.title--xs Другие медицинские услуги
         .add-services__nav.flex.flex--gap8
           ul.list-link
@@ -64,42 +64,42 @@ block content
               a.list-link__link(href="#" onclick="event.preventDefault();") Лечение Сургитрон
             li.list-link__item   
               a.list-link__link(href="#" onclick="event.preventDefault();") Кольпоскопия
-        strong
+        .add-services__foot
           a(href="#" onclick="event.preventDefault();") Все медицинские услуги Гемотест (35) → 
     section.section
       .container
         h2.visually-hidden Наши приимущества
         ul.advantages-list.flex.flex--row.flex--xs-col 
           li.advantages-list__item 
-            .advantages-post.flex.flex--gap20.flex--x-center.flex--xs-row
+            .advantages-post.flex.flex--gap20.flex--xs-gap12.flex--x-center.flex--xs-row
               +svg("icon-fns")
               .advantages-post__txt
                 h3.advantages-post__title
                   a(href="#" onclick="event.preventDefault();") Справка в налоговую (ФНС)
                 p.advantages-post__description для оформления налогового вычета
           li.advantages-list__item 
-            .advantages-post.flex.flex--gap20.flex--x-center.flex--xs-row  
+            .advantages-post.flex.flex--gap20.flex--xs-gap12.flex--x-center.flex--xs-row  
               +svg("icon-consultant")
               .advantages-post__txt
                 h3.advantages-post__title
                   a(href="#" onclick="event.preventDefault();") Бесплатная консультация
                 p.advantages-post__description врача Гемотест по телефону
           li.advantages-list__item 
-            .advantages-post.flex.flex--gap20.flex--x-center.flex--xs-row  
+            .advantages-post.flex.flex--gap20.flex--xs-gap12.flex--x-center.flex--xs-row  
               +svg("icon-decode")
               .advantages-post__txt
                 h3.advantages-post__title
                   a(href="#" onclick="event.preventDefault();") Расшифровка результатов
                 p.advantages-post__description из других лабораторий
           li.advantages-list__item 
-            .advantages-post.flex.flex--gap20.flex--x-center.flex--xs-row  
+            .advantages-post.flex.flex--gap20.flex--xs-gap12.flex--x-center.flex--xs-row  
               +svg("icon-discount")
               .advantages-post__txt
                 h3.advantages-post__title
                   a(href="#" onclick="event.preventDefault();") Бонусная программа
                 p.advantages-post__description «Копите на здоровье»
           li.advantages-list__item 
-            .advantages-post.flex.flex--gap20.flex--x-center.flex--xs-row  
+            .advantages-post.flex.flex--gap20.flex--xs-gap12.flex--x-center.flex--xs-row  
               +svg("icon-cancer")
               .advantages-post__txt
                 h3.advantages-post__title

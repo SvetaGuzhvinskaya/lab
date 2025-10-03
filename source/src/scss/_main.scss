@@ -1,10 +1,10 @@
 // MAIN
 .main {
-    padding: 18px 0 24px;
+    padding: 20px 0 24px;
 }
 .post-img {
     position: relative;
-    padding: 35px 40px 40px;
+    padding: 33px 40px 40px;
     aspect-ratio: 1 / .94;
     color: $color-white;
     border-radius: 4px;
@@ -70,8 +70,9 @@
     }
 }
 .add-services {
-    &__nav {
-        margin-bottom: 3px;
+    &__foot {
+        font-weight: 700;
+        line-height: 18px;
     }
 }
 .list-link {
@@ -148,7 +149,7 @@
 }
 @media (max-width: $xs) {
     .main {
-        padding: 12px 0;
+        padding: 14px 0;
     }
     .services-slider {
         margin-top: 2px;
@@ -161,10 +162,12 @@
     }
     .post-img {
         padding: 28px 32px 32px;
-        aspect-ratio: .897 / 1;
+        aspect-ratio: .9 / 1;
     }
     .add-services {
-        margin-bottom: 3px;
+        &__nav {
+            margin-bottom: 0;
+        }
     }
     .list-link {
         flex-direction: column;
@@ -173,8 +176,8 @@
             flex-direction: column;
             align-items: start;
             gap: 0;
-            &:not(:first-child) {
-                &:before {
+            &:not(:last-child) {
+                &:after {
                     display: none;
                 }
             }
